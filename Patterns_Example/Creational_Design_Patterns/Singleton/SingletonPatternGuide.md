@@ -150,19 +150,6 @@ public sealed class Singleton
 **Problem**: Improper implementation can cause race conditions
 **Solution**: Use proven thread-safe patterns like `Lazy<T>`
 
-## Code Structure
-
-```
-Singleton/
-├── IConfigurationManager.cs        # Configuration interface
-├── ConfigurationManager.cs         # Configuration singleton
-├── Logger.cs                       # Logging singleton
-├── DatabaseConnectionPool.cs       # Connection pool singleton
-├── ApplicationCache.cs             # Cache singleton
-├── SingletonExample.cs             # Usage examples
-└── SingletonPatternDemo.cs         # Main demo program
-```
-
 ## Thread Safety Features
 
 All singleton implementations in this example are thread-safe:
