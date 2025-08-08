@@ -1,0 +1,13 @@
+namespace Patterns_Example.Creational_Design_Patterns.Singleton.Logger;
+
+/// <summary>
+/// Log levels enumeration.
+/// </summary>
+public enum LogLevel
+{
+    Debug = 0,
+    Information = 1,
+    Warning = 2,
+    Error = 3,
+    Critical = 4
+}

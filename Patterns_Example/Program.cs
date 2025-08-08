@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Prototype Pattern Example
-using Patterns_Example.Creational_Design_Patterns.Prototype;
+// Singleton Pattern Example
+using Patterns_Example.Creational_Design_Patterns.Singleton;
 
-PrototypeExample.RunExample();
+SingletonExample.RunExample();
