@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns_Example", "Patterns_Example\Patterns_Example.csproj", "{9FD33D3A-86F5-4E99-8634-57E7135ABF31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD33D3A-86F5-4E99-8634-57E7135ABF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD33D3A-86F5-4E99-8634-57E7135ABF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD33D3A-86F5-4E99-8634-57E7135ABF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD33D3A-86F5-4E99-8634-57E7135ABF31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
