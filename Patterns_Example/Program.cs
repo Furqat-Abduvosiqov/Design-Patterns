@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Flyweight Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Flyweight;
+// Proxy Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Proxy;
 
-FlyweightExample.RunExample();
+ProxyExample.RunExample();
