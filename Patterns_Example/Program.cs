@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Composite Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Composite;
+// Decorator Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Decorator;
 
-CompositeExample.RunExample();
+await DecoratorExample.RunExample();
