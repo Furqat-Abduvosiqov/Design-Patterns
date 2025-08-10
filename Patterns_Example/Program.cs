@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Decorator Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Decorator;
+// Facade Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Facade;
 
-await DecoratorExample.RunExample();
+FacadeExample.RunExample();
