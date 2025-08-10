@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Bridge Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Bridge;
+// Composite Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Composite;
 
-await BridgeExample.RunExample();
+CompositeExample.RunExample();
