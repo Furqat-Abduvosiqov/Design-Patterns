@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Facade Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Facade;
+// Flyweight Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Flyweight;
 
-FacadeExample.RunExample();
+FlyweightExample.RunExample();
