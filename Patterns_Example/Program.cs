@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Adapter Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Adapter;
+// Bridge Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Bridge;
 
-AdapterExample.RunExample();
+await BridgeExample.RunExample();
