@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Singleton Pattern Example
-using Patterns_Example.Creational_Design_Patterns.Singleton;
+// Adapter Pattern Example
+using Patterns_Example.Structural_Design_Patterns.Adapter;
 
-SingletonExample.RunExample();
+AdapterExample.RunExample();
