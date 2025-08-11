@@ -44,7 +44,7 @@
 //     Console.WriteLine();
 // }
 
-// Proxy Pattern Example
-using Patterns_Example.Structural_Design_Patterns.Proxy;
+// Chain of Responsibility Pattern Example
+using Patterns_Example.Behavioral_Design_Patterns.ChainOfResponsibility;
 
-ProxyExample.RunExample();
+ChainOfResponsibilityExample.RunExample();
