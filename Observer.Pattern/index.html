@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Dashboard</title>
+</head>
+<body>
+<!-- Log container -->
+<h2>📈 Live Stock Prices</h2>
+<div id="log"></div>
+
+<!-- SignalR library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", async () => {
+        try {
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("http://localhost:5172/stockhub", {
+                    skipNegotiation: false,
+                    transport: signalR.HttpTransportType.WebSockets // or Auto
+                })
+                .withAutomaticReconnect()
+                .build();
+
+            connection.on("OnPriceUpdate", function (price) {
+                console.log("Received:", price);
+
+                // Use PascalCase (C# record fields)
+                const symbol = price.Symbol || price.symbol;
+                const value = price.Price || price.price;
+                const time = new Date(price.Timestamp || price.timestamp).toLocaleTimeString();
+
+                console.log(`${symbol}: $${value} at ${time}`);
+
+                const logDiv = document.getElementById("log");
+                const p = document.createElement("p");
+                p.innerHTML = `<b>${symbol}</b>: $${value} (${time})`;
+                logDiv.appendChild(p);
+            });
+
+            await connection.start();
+            console.log("Connected to SignalR hub ✅");
+
+            await connection.invoke("SubscribeToStock", "AAPL");
+        } catch (err) {
+            console.error("SignalR connection failed ❌", err);
+        }
+    });
+</script>
+
+</body>
+</html>
