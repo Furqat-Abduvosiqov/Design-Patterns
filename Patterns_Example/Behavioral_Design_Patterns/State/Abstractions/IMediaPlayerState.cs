@@ -1,4 +1,6 @@
-namespace Patterns_Example.Behavioral_Design_Patterns.State;
+using Patterns_Example.Behavioral_Design_Patterns.State.Contexts;
+
+namespace Patterns_Example.Behavioral_Design_Patterns.State.Abstractions;
 
 public interface IMediaPlayerState
 {
