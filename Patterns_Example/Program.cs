@@ -1,6 +1,7 @@
 ﻿using Patterns_Example.Behavioral_Design_Patterns.State;
 using Patterns_Example.Behavioral_Design_Patterns.Strategy;
 using Patterns_Example.Behavioral_Design_Patterns.TemplateMethod;
+using Patterns_Example.Behavioral_Design_Patterns.Visitor;
 
 // Entry point to demonstrate the State pattern with an advanced media player
 // await Console.Out.WriteLineAsync("=== State Pattern: Advanced Media Player ===\n");
@@ -11,5 +12,8 @@ using Patterns_Example.Behavioral_Design_Patterns.TemplateMethod;
 // await AdvancedPaymentExample.RunExample();
 
 // Entry point to demonstrate the Template Method pattern with data importers
-Console.WriteLine("=== Template Method Pattern: Data Importers ===\n");
-TemplateMethodExample.RunExample();
+// Console.WriteLine("=== Template Method Pattern: Data Importers ===\n");
+// TemplateMethodExample.RunExample();
+
+Console.WriteLine("=== Visitor Pattern: Document Elements ===\n");
+VisitorPatternExample.RunExample();
